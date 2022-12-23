@@ -111,7 +111,7 @@ import {
   NInput,
   
 } from 'naive-ui';
-import useAuth from '@/composables/useAuth';
+// import useAuth from '@/composables/useAuth';
 import paths from '@/shared/constants/paths';
 
 export default {
@@ -131,7 +131,7 @@ export default {
       position: null,
       textareaValue: null
     });
-    const { login, tempToken, logging } = useAuth();
+    // const { login, tempToken, logging } = useAuth();
 
     return {
       model: modelRef,
@@ -179,37 +179,9 @@ export default {
     NButton,
     NInput,
   },
-  mounted() {
-    this.captureReturnUrl();
-  },
   methods: {
     submit(e) {
       e.preventDefault();
-
-      this.loginErrMsg = '';
-      this.$refs.loginFormRef.validate((errors) => {
-        if (errors) {
-          return;
-        }
-        this.login({
-          params: {
-            username: this.model.email,
-            password: this.model.password,
-            token: this.tempToken,
-          },
-        }, (success, result) => {
-          if (success) {
-            if (this.redirectToReturnUrl()) {
-              return;
-            }
-
-            window.location.href = paths.homePage;
-            return;
-          }
-
-          this.loginErrMsg = result.message;
-        });
-      });
     },
   },
   computed: {

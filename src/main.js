@@ -8,7 +8,5 @@ const app = createApp({
 }).use(store);
 
 // Register custom components.
-
-app.component('chute-login', defineAsyncComponent(() => import('./components/chute/Login.vue')))
 app.component('chute-contactus', defineAsyncComponent(() => import('./components/chute/ContactUs.vue')))
 app.mount('#app');
