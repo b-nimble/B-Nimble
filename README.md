@@ -1,4 +1,4 @@
-# chute
+# B-Nimble
 
 > A Vue.JS MPA project
 
