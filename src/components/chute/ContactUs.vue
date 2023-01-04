@@ -2,11 +2,11 @@
   <n-config-provider :theme-overrides="themeOverrides">
     <div class="chute-login-cpt">
 
-      <h1 class="center">Contact Us</h1>
+      <h2 class="center">Contact Us</h2>
       <n-form
         :model="model"
         ref="loginFormRef"
-        :rules="rules" class="mx-auto card p-5 blue-bg">
+        :rules="rules" class="mx-auto card p-5  blue-bg content-container" >
 
 
       <!-- Name Input Field -->
@@ -21,6 +21,8 @@
             :show-require-mark="true"
             :bordered="false"
             placeholder="Full Name"
+            style="placeholderColor: rgba(255, 255, 255)"
+            
            />
         </n-form-item>
 
@@ -111,7 +113,6 @@ import {
   NInput,
   
 } from 'naive-ui';
-// import useAuth from '@/composables/useAuth';
 import paths from '@/shared/constants/paths';
 
 export default {
@@ -139,7 +140,7 @@ export default {
         name: {
             required: true,
             message: "Please enter your Full Name",
-            trigger: "blur"
+            trigger: ["input"]
           },
           phone: {
           required: true,
@@ -166,7 +167,7 @@ export default {
         ],
         textareaValue: {
           required: true,
-          trigger: ['blur', 'input'],
+          trigger: ['input'],
           message: 'Please type a brief message'
         }
       },

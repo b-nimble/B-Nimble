@@ -3,9 +3,14 @@
 export const themeOverrides = () => {
   return {
     common: {
-      primaryColor: '#88d8df ',
-      primaryColorHover: '#ffd580    ',
-      primaryColorPressed: '#003865 ',
+      primaryColor: '#E2711D ',
+      primaryColorHover: 'rgb(255, 219, 219)',
+      primaryColorPressed: 'rgb(255, 219, 219)',
+
+    },
+    Input: {
+      textColor: '#E2711D',
+      placeholderColor: '#fff',
     },
   };
 }
