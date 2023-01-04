@@ -699,28 +699,28 @@ margin-right: auto;
 
 .tabs [id^="tab1"]:checked + label i {
   border-color: #3498db;
-  background: white url(/public/assets/img/icon_design_blue.jpg);
+  background: white url(/assets/img/icon_design_blue.jpg);
   background-position: -14px -10px;
   background-size: 80px 80px;
 }
 
 .tabs [id^="tab2"]:checked + label i {
   border-color: #3498db;
-  background: white url(/public/assets/img/icon_develpment_blue.jpg);
+  background: white url(/assets/img/icon_develpment_blue.jpg);
   background-position: -14px -10px;
   background-size: 80px 80px;
 }
 
 .tabs [id^="tab3"]:checked + label i {
   border-color: #3498db;
-  background: white url(/public/assets/img/icon_hosting_blue.jpg);
+  background: white url(/assets/img/icon_hosting_blue.jpg);
   background-position: -10px 0px;
   background-size: 70px 70px;
 }
 
 .tabs [id^="tab4"]:checked + label i {
   border-color: #3498db;
-  background: white url(/public/assets/img/icon_maintenance_blue.jpg);
+  background: white url(/assets/img/icon_maintenance_blue.jpg);
   background-position: -11px -10px;
   background-size: 75px 75px;
 }
@@ -750,25 +750,25 @@ box-sizing: border-box;
 }
 
 .email-cal {
-background: white url(/public/assets/img/icon_design.jpg);
+background: white url(/assets/img/icon_design.jpg);
 background-position: 0 0;
 background-size: 50px 50px;
 }
 
 .snapshot {
-background: white url(/public/assets/img/icon_development.jpg);
+background: white url(/assets/img/icon_development.jpg);
 background-size: 50px 50px;
 background-position: 0 0;
 }
 
 .inbox-apps {
-background: white url(/public/assets/img/icon_hosting.jpg);
+background: white url(/assets/img/icon_hosting.jpg);
 background-size: 50px 50px;
 background-position: 0 0;
 }
 
 .log-calls {
-background: white url(/public/assets/img/icon_maintenance.jpg);
+background: white url(/assets/img/icon_maintenance.jpg);
 background-size: 50px 50px;
 background-position: 0 0;
 }
